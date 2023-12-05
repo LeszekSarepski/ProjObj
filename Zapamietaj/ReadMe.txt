@@ -1,0 +1,1 @@
+Aby program poprawnie działał należy zmienić ścieżkę dostępu do plików dzwiękowych.

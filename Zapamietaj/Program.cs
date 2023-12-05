@@ -23,9 +23,9 @@ class Zapamietaj
         while(Game)
         {
             GenerateLetter();
-           // Console.Clear();
+            Console.Clear();
             DisplayGame();
-            //Console.Clear();
+            Console.Clear();
             score = FullCombo.Length;
             Console.WriteLine("Wpisz litery w dobrej kolejnosci");
             Input = Console.ReadLine();
