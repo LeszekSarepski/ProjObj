@@ -90,17 +90,21 @@ class Zapamietaj
     {
         foreach (char Letter in Zapamietaj.FullCombo)
         {
+            
             Console.Write($"{Letter} ");
             if (Letter == 'A')
             { 
+                // Tutaj ścieżkę trzeba zmienić dla każdej osoby indywidualnie
                 PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\a.wav"); 
             }
             if (Letter == 'S')
             { 
+                // Tutaj ścieżkę trzeba zmienić dla każdej osoby indywidualnie
                 PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\s.wav"); 
             }
             if (Letter == 'D')
             { 
+                // Tutaj ścieżkę trzeba zmienić dla każdej osoby indywidualnie
                 PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\d.wav"); 
             }
             Thread.Sleep(300);
