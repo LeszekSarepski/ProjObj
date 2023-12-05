@@ -17,8 +17,8 @@ class Zapamietaj
     {
         Console.WriteLine("Witaj\n");
         Console.WriteLine("Bede podawal ci jedn z 3 liter A, S lub D\n");
-        Console.WriteLine("Beda one znikac po 5 sekundach a ty bedziesz musial je zapamietac i podac w odpowiedniej kolejnosci\n");
-        Thread.Sleep(5000);
+        Console.WriteLine("Beda one znikac po wyswietleniu a ty bedziesz musial je zapamietac i podac w odpowiedniej kolejnosci\n");
+        Thread.Sleep(10000);
         
         while(Game)
         {
@@ -51,15 +51,15 @@ class Zapamietaj
         if (Input.ToUpper() != FullCombo)
         {
                 
-                Console.WriteLine("Przegrales. Twoj wynik to: {0}\nOstatnia kombinacja to: {1} \nGrasz dalej? (y/n)", score - 1, FullCombo);
+                Console.WriteLine("Przegrales. Twoj wynik to: {0}\nOstatnia kombinacja to: {1} \nGrasz dalej? (a = TAK/s = NIE)", score - 1, FullCombo);
                 Zapamietaj.Continue = Console.ReadLine();
                 
-                if (Zapamietaj.Continue == "y")
+                if (Zapamietaj.Continue == "a")
                 {
                     Game = true;
                     Zapamietaj.FullCombo = "";
                 }
-                if (Zapamietaj.Continue == "n")
+                if (Zapamietaj.Continue == "s")
                 {
                     Game = false;
                 }
