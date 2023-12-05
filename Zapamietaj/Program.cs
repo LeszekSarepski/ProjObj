@@ -23,9 +23,9 @@ class Zapamietaj
         while(Game)
         {
             GenerateLetter();
-            Console.Clear();
+           // Console.Clear();
             DisplayGame();
-            Console.Clear();
+            //Console.Clear();
             score = FullCombo.Length;
             Console.WriteLine("Wpisz litery w dobrej kolejnosci");
             Input = Console.ReadLine();
@@ -93,15 +93,15 @@ class Zapamietaj
             Console.Write($"{Letter} ");
             if (Letter == 'A')
             { 
-                PlaySound("a.wav"); 
+                PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\a.wav"); 
             }
             if (Letter == 'S')
             { 
-                PlaySound("s.wav"); 
+                PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\s.wav"); 
             }
             if (Letter == 'D')
             { 
-                PlaySound("d.wav"); 
+                PlaySound("C:\\Users\\rgoly\\RiderProjects\\ConsoleApp1\\Zapamietaj\\d.wav"); 
             }
             Thread.Sleep(300);
             
